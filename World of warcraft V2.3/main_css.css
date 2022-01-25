@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+.head{
+	background:url(images/%D0%B1%D0%B0%D1%88%D0%BA%D0%B0.png);
+	text-align:center;
+	height:200px;
+}
+img  {border:0px}
+body {
+	background-image:url(images/fon.jpg);
+	background-repeat:no-repeat;
+	width:100%;
+}
+	/*меню выдвигающееся на CSS*/
+.menu{
+	position:relative;
+	z-index:100;
+	width: 243px;
+	border-right: 4px;
+}
+.menu td a, .menu td a:visited{
+	display:block;
+	text-align:left;
+	overflow:hidden;
+	font-family: "Comic Sans MS", cursive;
+}
+.menu td ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+	display:none;
+}
+.menu td{
+    position:relative
+	}
+.menu ul li:hover a{
+    color:#03F;
+    background:#36f
+}
+.menu td:hover ul{
+	z-index:150;
+    display:block;
+    position:absolute;
+    top:0px;
+    left:243px;
+    width:111px
+}
+.menu td:hover ul li a{
+    display:block;
+    background:#ddd;
+    color:#000;
+}
+.menu td:hover ul li a:hover{
+    background:#00F;
+    color:#F00;
+}
